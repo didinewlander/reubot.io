@@ -1,5 +1,6 @@
 post_head = "&&&&&\n"
 post_end = "$$$$$\n"
+post_content_end = "%%%%%"
 time_format = "%H:%M:%S"
 
 log_file_path = "logfile.txt"
@@ -16,8 +17,6 @@ exception_report_success = "posting SUCCEEDED at "
 exception_report_fail = "posting FAILED at "
 exception_post_border_error = "Post Error. Script terminated"
 exception_post_number_error = "Post Error. Script terminated"
-
-
 
 username_field = "session_key"
 password_field = "session_password"
