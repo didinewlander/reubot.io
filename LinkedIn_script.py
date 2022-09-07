@@ -33,6 +33,8 @@ def post_process():
     post_number = post_test[0].split()
     if not post_number[-1].isnumeric():
         raise Exception(exception_post_number_error)
+    now = datetime.now().strftime(time_format)
+    logfile.write(log_report_valid + now + '\n')
 
 
 def post_list_update():
@@ -46,7 +48,7 @@ def post_list_update():
             if line != post_content_end:
                 post_update.writelines(line)
     now = datetime.now().strftime(time_format)
-    logfile.write(log_report_start + now + '\n')
+    logfile.write(log_report_update + now + '\n')
 
 
 def post_to_linkedIn():
@@ -84,6 +86,8 @@ def main():
     try:
         post_process()
         post_to_linkedIn()
+        now = datetime.now().strftime(time_format)
+        logfile.write(log_report_update + now + '\n')
     except:
         post_fail()
 
