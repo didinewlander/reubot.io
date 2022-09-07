@@ -8,6 +8,7 @@ from strings import *
 logfile = open(log_file_path, 'a', encoding='utf-8')
 post_content = open(post_file_path, 'r', encoding='utf-8').readlines()  # the entire post
 
+
 def report_start():
     now = datetime.now().strftime("%m/%d/%Y | %H:%M:%S")
     logfile.write(log_report_start + now + '\n')
@@ -47,6 +48,7 @@ def post_list_update():
                 post_update.writelines(line)
     now = datetime.now().strftime(time_format)
     logfile.write(log_report_start + now + '\n')
+
 
 def post_to_linkedIn():
     driver = webdriver.Chrome(executable_path=webdriver_path)
