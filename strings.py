@@ -10,6 +10,7 @@ webdriver_path = "/Users/ydidy/Documents/Coding/Web bot/chromedriver"
 linkedin_path = "https://www.linkedin.com/"
 
 log_report_start = "posting script started at "
+log_report_start = "posts file updated "
 log_report_success = "posting SUCCEEDED at "
 log_report_fail = "posting FAILED at "
 
