@@ -6,8 +6,8 @@ counter = 5
 
 log_file_path = "logfile.txt"
 post_file_path = "post_content.txt"
-userdata_file_path = "userdata.txt"
-webdriver_path = "/Users/ydidy/Documents/Coding/Web bot/chromedriver"
+userdata_file_path = "place here the location of your username and password, seperated into 2 lines. no prefix required"
+webdriver_path = " place here your location of the browser driver for selenium"
 linkedin_path = "https://www.linkedin.com/"
 
 log_report_start = "posting script STARTED at "

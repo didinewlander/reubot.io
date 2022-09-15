@@ -38,7 +38,7 @@ def post_process():
 
 
 def post_list_update():
-    # this piece of code runs only after the post was delivered. if not - this code CAN NOT RUN
+    # run this ONLY after the post was delivered. if not - this code CAN NOT RUN! otherwise - it will eat all your posts with no mercy
     remove_old_post_after_delivery = open(post_file_path, 'w', encoding='utf-8')
     start_copy_here = False
     for line in post_content:
@@ -72,7 +72,8 @@ def post_to_linkedIn():
             if not line == post_end:
                 post_input.send_keys(line)
         sleep(4)
-        #      driver.find_element(By.XPATH, post_button).click()
+        # driver.find_element(By.XPATH, post_button).click()
+        # remove # before running the script, otherwise - the post will not be published nor drafted, and the browser will close.
         post_success()
         driver.close()
         return
