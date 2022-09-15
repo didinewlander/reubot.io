@@ -38,7 +38,8 @@ def post_process():
 
 
 def post_list_update():
-    post_update = open(post_file_path, 'w', encoding='utf-8')
+    # this piece of code runs only after the post was delivered. if not - this code CAN NOT RUN
+    remove_old_post_after_delivery = open(post_file_path, 'w', encoding='utf-8')
     start_copy_here = False
     for line in post_content:
         if line == post_end and start_copy_here is False:
@@ -46,7 +47,7 @@ def post_list_update():
             continue
         if start_copy_here:
             if line != post_content_end:
-                post_update.writelines(line)
+                remove_old_post_after_delivery.writelines(line)
     now = datetime.now().strftime(time_format)
     logfile.write(log_report_update + now + '\n')
 
@@ -70,9 +71,8 @@ def post_to_linkedIn():
                 break
             if not line == post_end:
                 post_input.send_keys(line)
-        post_list_update()
         sleep(4)
-        driver.find_element(By.XPATH, post_button).click()
+        #      driver.find_element(By.XPATH, post_button).click()
         post_success()
         driver.close()
         return
@@ -82,7 +82,6 @@ def post_to_linkedIn():
 
 def main():
     report_start()
-    post_list_update()
     try:
         post_process()
         post_to_linkedIn()

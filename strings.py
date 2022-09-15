@@ -1,7 +1,8 @@
 post_head = "&&&&&\n"
 post_end = "$$$$$\n"
 post_content_end = "%%%%%"
-time_format = "%H:%M:%S"
+time_format = "%m/%d/%Y | %H:%M:%S"
+counter = 5
 
 log_file_path = "logfile.txt"
 post_file_path = "post_content.txt"
