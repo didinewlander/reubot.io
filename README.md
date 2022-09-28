@@ -1,5 +1,12 @@
 # RE-U-BOT - The LinkedIn Posting Bot
-> its pronounced Reubot, like ראובן. Look it up.
+<mark> Its pronounced Reubot, like ראובן. Look it up. </mark>
+
+> **IMPORTANT NOTE FOR THE USER**
+>
+>This code can cause some issues with your user experience with LinkedIn:
+> 1. You might get blocked. This bot bypass the bot filteration system on linkedIn, and they don't have any clear guidelines about using THIS type of bot. So please use this code reponsibly, and don't cause any damage to the network.
+> 2. This is NOT the right way to use LinkedIn. This network is based on real-life connections and experiences. Make sure you use this code wisely and don't turn the network into a bot-society.
+
 
 
 
