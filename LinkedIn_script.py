@@ -86,7 +86,7 @@ def post_to_linkedIn():
             if not line == post_end:
                 post_input.send_keys(line)
         sleep(2)
-        hash_tag(post_input,"ראובוט-Reubot")
+        hash_tag(post_input,"ראובוט")
         # driver.find_element(By.XPATH, post_button).click() # deactivated. to re-activate - remove # sign
         post_success()
         driver.close()
