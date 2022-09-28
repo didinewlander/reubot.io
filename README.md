@@ -15,6 +15,9 @@ The code has 3 layers:
 2. A library of strings, so the main code would look much more pythonic.
 3. The user's identification info - email and password.
 
+### How to automate this code?
+Use this tutorial step-by-step, if you want to automate this code: https://www.youtube.com/watch?v=x7aD2YFOMbE
+
 ## **Version 1.5**
 ### What's new?
 In this version we added HASHTAG and NAMETAG editorial functions, just make sure you are tagging the right person, add it at the end of the post (and before the button press) and the LinkedIn members will be tagged.
