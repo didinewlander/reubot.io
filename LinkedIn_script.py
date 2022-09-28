@@ -1,11 +1,12 @@
 from datetime import datetime
 from selenium import webdriver
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from time import sleep
 from strings import *
 
 logfile = open(log_file_path, 'a', encoding='utf-8')
-post_content = open(post_file_path, 'r', encoding='utf-8').readlines()  # the entire post
+post_content = open(post_file_path, 'r', encoding='utf-8').readlines()
 
 
 def report_start():
@@ -37,19 +38,32 @@ def post_process():
     logfile.write(log_report_valid + now + '\n')
 
 
-def post_list_update():
-    # run this ONLY after the post was delivered. if not - this code CAN NOT RUN! otherwise - it will eat all your posts with no mercy
-    remove_old_post_after_delivery = open(post_file_path, 'w', encoding='utf-8')
-    start_copy_here = False
-    for line in post_content:
-        if line == post_end and start_copy_here is False:
-            start_copy_here = True
-            continue
-        if start_copy_here:
-            if line != post_content_end:
-                remove_old_post_after_delivery.writelines(line)
-    now = datetime.now().strftime(time_format)
-    logfile.write(log_report_update + now + '\n')
+def tag_name(post_input, name_to_comment):
+    post_input.send_keys("@" + name_to_comment)
+    sleep(1)
+    post_input.send_keys(Keys.ARROW_DOWN)
+    sleep(1)
+    post_input.send_keys(Keys.ENTER)
+    sleep(2)
+
+
+def hash_tag(post_input, name_to_comment):
+    hashtag = name_to_comment.replace(" ", "_")
+    post_input.send_keys("#" + hashtag)
+    sleep(1)
+    post_input.send_keys(Keys.ARROW_DOWN)
+    sleep(1)
+    post_input.send_keys(Keys.ENTER)
+    sleep(2)
+
+
+def clean_post():
+    update_file = open(post_file_path, encoding='utf-8')
+    data = update_file.read()
+    data = data[data.index(post_end) + len(post_end):]
+    update_file.close()
+    update_file = open(post_file_path, 'w', encoding='utf-8')
+    update_file.write(data)
 
 
 def post_to_linkedIn():
@@ -62,7 +76,7 @@ def post_to_linkedIn():
         driver.find_element(By.ID, username_field).send_keys(userdata[0])
         driver.find_element(By.ID, password_field).send_keys(userdata[1])
         driver.find_element(By.XPATH, login_button).click()
-        sleep(2)
+        sleep(3)
         driver.find_element(By.XPATH, writing_button).click()
         sleep(2)
         post_input = driver.find_element(By.CLASS_NAME, posting_field)
@@ -71,9 +85,9 @@ def post_to_linkedIn():
                 break
             if not line == post_end:
                 post_input.send_keys(line)
-        sleep(4)
-        # driver.find_element(By.XPATH, post_button).click()
-        # remove # before running the script, otherwise - the post will not be published nor drafted, and the browser will close.
+        sleep(2)
+        hash_tag(post_input,"ראובוט-Reubot")
+        # driver.find_element(By.XPATH, post_button).click() # deactivated. to re-activate - remove # sign
         post_success()
         driver.close()
         return
@@ -83,6 +97,7 @@ def post_to_linkedIn():
 
 def main():
     report_start()
+    clean_post()
     try:
         post_process()
         post_to_linkedIn()
