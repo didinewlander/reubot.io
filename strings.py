@@ -5,7 +5,7 @@ time_format = "%m/%d/%Y | %H:%M:%S"
 
 log_file_path = "logfile.txt"
 post_file_path = "post_content.txt"
-userdata_file_path = "userdata.txt"
+userdata_file_path = "login_data.txt"
 webdriver_path = "/Users/ydidy/Documents/Coding/Web bot/chromedriver"
 linkedin_path = "https://www.linkedin.com/"
 

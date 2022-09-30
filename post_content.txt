@@ -1,6 +1,12 @@
 &&&&&
-היי לינקדאין, זהו פוסט מס' 6
-מתוך סדרת פוסטים של 'מושג אחד ביום' בסיועו של ראובוט - הבוט הנאמן
+Hi there! this is post number 1
 
+And this is the content of the post.
+
+EXAMPLE EXAMPLE EXAMPLE EXAMPLE EXAMPLE EXAMPLE
+
+Thanks!
 $$$$$
 %%%%%
+
+*Please pay close attention to use a number at the end of the first line of your post.
