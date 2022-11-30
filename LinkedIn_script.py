@@ -2,7 +2,11 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
+from pyautogui import press
 from time import sleep
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ec
+
 from strings import *
 
 logfile = open(log_file_path, 'a', encoding='utf-8')
@@ -15,6 +19,7 @@ def report_start():
 
 
 def post_success():
+    sleep(6)
     now = datetime.now().strftime(time_format)
     logfile.write(log_report_success + now + '\n')
     raise Exception(exception_report_success + now + '\n')
@@ -66,6 +71,17 @@ def clean_post():
     update_file.write(data)
 
 
+def uploadImage(driver, image_path):
+    driver.find_element(By.XPATH, image_button).click()
+    sleep(1)
+    press('esc')
+    driver.find_element(By.XPATH, image_select).send_keys(image_path)
+    wait = WebDriverWait(driver, 5)
+    pressButton = wait.until(ec.visibility_of_element_located((By.XPATH, image_complete)))
+    sleep(1)
+    pressButton.click()
+
+
 def post_to_linkedIn():
     driver = webdriver.Chrome(executable_path=webdriver_path)
     linkedin = linkedin_path
@@ -76,7 +92,7 @@ def post_to_linkedIn():
         driver.find_element(By.ID, username_field).send_keys(userdata[0])
         driver.find_element(By.ID, password_field).send_keys(userdata[1])
         driver.find_element(By.XPATH, login_button).click()
-        sleep(3)
+        sleep(2)
         driver.find_element(By.XPATH, writing_button).click()
         sleep(2)
         post_input = driver.find_element(By.CLASS_NAME, posting_field)
@@ -87,7 +103,10 @@ def post_to_linkedIn():
                 post_input.send_keys(line)
         sleep(2)
         hash_tag(post_input,"ראובוט")
-        # driver.find_element(By.XPATH, post_button).click() # deactivated. to re-activate - remove # sign
+
+        uploadImage(driver, image_path)
+        sleep(6)
+        driver.find_element(By.XPATH, post_button).click() # deactivated. to re-activate - remove # sign
         post_success()
         driver.close()
         return
@@ -96,10 +115,10 @@ def post_to_linkedIn():
 
 
 def main():
-    report_start()
-    clean_post()
+    # report_start()
+    # clean_post()
     try:
-        post_process()
+        # post_process()
         post_to_linkedIn()
         now = datetime.now().strftime(time_format)
         logfile.write(log_report_update + now + '\n')

@@ -27,3 +27,7 @@ posting_field = "ql-editor.ql-blank"
 login_button = '//form/button[1]'
 writing_button = "//*[@id = 'main']/div[1]/div/div[1]/button"
 post_button = "//div[@class = 'share-box_actions']//span[@class = 'artdeco-button__text']"
+image_button = "//div[2]//div/div[2]/div[2]//span[1]/button"
+image_select = '//div[3]/div/div/div[2]/div/div/input'
+image_path = "C:/finale.jpg"
+image_complete = '//div[3]//div[2]//div[2]/div/button'
