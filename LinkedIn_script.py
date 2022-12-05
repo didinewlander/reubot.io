@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver import Keys
 from postType import *
 
+
 logfile = open(log_file_path, 'a', encoding='utf-8')
 post_content = open(post_file_path, 'r', encoding='utf-8').readlines()
 
@@ -49,6 +50,17 @@ def clean_post():
     update_file.write(data)
 
 
+def uploadImage(driver, image_path):
+    driver.find_element(By.XPATH, image_button).click()
+    sleep(1)
+    press('esc')
+    driver.find_element(By.XPATH, image_select).send_keys(image_path)
+    wait = WebDriverWait(driver, 5)
+    pressButton = wait.until(ec.visibility_of_element_located((By.XPATH, image_complete)))
+    sleep(1)
+    pressButton.click()
+
+
 def post_to_linkedIn():
     counter = 0
     driver = webdriver.Chrome(executable_path=webdriver_path)
@@ -64,6 +76,7 @@ def post_to_linkedIn():
     }
     try:
         driver.get(linkedin)
+
         waitList = [1, 1, 1, 2, 3, 3, 4, 4]
         for command in commands.values():
             counter += 1
@@ -87,7 +100,7 @@ def main():
     logging.info(log_report_start)
     clean_post()
     try:
-        post_process()
+        # post_process()
         post_to_linkedIn()
         logging.info(log_report_update)
     except:
