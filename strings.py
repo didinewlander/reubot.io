@@ -36,9 +36,9 @@ video_button = "//div[3]//div[2]//span[2]/button"
 video_select = '//div[3]//div[2]//div[1]/div/input'
 video_path = "C:/image.gif"
 file_complete = '//div[3]//div[2]//div[2]/div/button[2]'
-
 logging.basicConfig(filename=log_file_path,
                     filemode='a',
                     format='%(message)s %(asctime)s',
                     datefmt='%H:%M:%S',
                     level=logging.INFO)
+
