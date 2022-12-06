@@ -7,7 +7,7 @@ from pyautogui import press
 
 
 def uploadToLinkedin(driver, upload, path):
-    button_path, input_path, accept_path = ""
+    button_path, input_path, accept_path = "", "", ""
     if upload == "image":
         button_path = image_button
         input_path = image_select
@@ -18,7 +18,7 @@ def uploadToLinkedin(driver, upload, path):
         accept_path = file_complete
 
     else:
-        raise Exception ("New features are unavailable")
+        raise Exception("New features are unavailable")
     '''
     elif upload== "document":
         button_path = image_button
@@ -35,12 +35,14 @@ def uploadToLinkedin(driver, upload, path):
     elif upload == "offer":
         
     elif upload== "event":'''
-
+    wait = WebDriverWait(driver, 5)
+    pressButton = wait.until(ec.visibility_of_element_located((By.XPATH, button_path)))
+    pressButton.click()
     driver.find_element(By.XPATH, button_path).click()
     sleep(1)
     press('esc')
     driver.find_element(By.XPATH, input_path).send_keys(path)
-    wait = WebDriverWait(driver, 5)
+
     pressButton = wait.until(ec.visibility_of_element_located((By.XPATH, accept_path)))
     sleep(1)
     pressButton.click()

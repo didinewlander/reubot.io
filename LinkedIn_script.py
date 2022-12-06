@@ -58,7 +58,7 @@ def post_to_linkedIn():
         "1password": lambda: driver.find_element(By.ID, password_field).send_keys(userdata[1]),
         "2login button": lambda: driver.find_element(By.XPATH, login_button).click(),
         "3find typing area": lambda: driver.find_element(By.XPATH, writing_button).click(),
-        "@upload": uploadToLinkedin(driver, "image", image_path),
+        "@upload": lambda: (driver, "image", image_path),
         "@final click": lambda: driver.find_element(By.XPATH, post_button).click(),
         "closing time": lambda: driver.close()
     }
