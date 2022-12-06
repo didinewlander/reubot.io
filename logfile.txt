@@ -1,1 +1,168 @@
-This file contains every log report on the posting process
+This file contains every log report on the posting processposting script STARTED at 11/30/2022 | 23:49:06
+posts file UPDATED 11/30/2022 | 23:49:21
+posting script STARTED at 11/30/2022 | 23:49:38
+posts file UPDATED 11/30/2022 | 23:50:30
+posts file UPDATED 11/30/2022 | 23:51:36
+posts file UPDATED 11/30/2022 | 23:54:45
+posting SUCCEEDED at 11/30/2022 | 23:57:09
+posts file UPDATED 11/30/2022 | 23:57:11
+posts file UPDATED 12/01/2022 | 00:03:58
+posting SUCCEEDED at 12/01/2022 | 00:04:39
+posts file UPDATED 12/01/2022 | 00:04:41
+posts file UPDATED 12/01/2022 | 00:07:52
+posts file UPDATED 12/01/2022 | 00:12:38
+posting SUCCEEDED at 12/01/2022 | 00:13:13
+posts file UPDATED 12/01/2022 | 00:13:15
+posting SUCCEEDED at 12/01/2022 | 00:14:19
+posts file UPDATED 12/01/2022 | 00:14:21
+posting SUCCEEDED at 12/01/2022 | 00:14:57
+posts file UPDATED 12/01/2022 | 00:14:59
+posts file UPDATED 12/01/2022 | 00:15:20
+posts file UPDATED 12/01/2022 | 00:16:48
+posts file UPDATED 12/01/2022 | 00:17:22
+posts file UPDATED 12/01/2022 | 00:17:47
+posts file UPDATED 12/01/2022 | 00:18:13
+posts file UPDATED 12/01/2022 | 00:19:44
+posting SUCCEEDED at 12/01/2022 | 00:21:05
+posts file UPDATED 12/01/2022 | 00:21:07
+posts file UPDATED 12/01/2022 | 00:22:54
+posts file UPDATED 12/01/2022 | 00:30:22
+posts file UPDATED 12/01/2022 | 00:31:03
+posting SUCCEEDED at 12/01/2022 | 00:32:09
+posts file UPDATED 12/01/2022 | 00:32:12
+posting SUCCEEDED at 12/01/2022 | 00:35:11
+posts file UPDATED 12/01/2022 | 00:35:13
+posts file UPDATED 12/01/2022 | 00:38:51
+posting SUCCEEDED at 12/01/2022 | 00:39:49
+posts file UPDATED 12/01/2022 | 00:39:51
+posting SUCCEEDED at 12/01/2022 | 00:41:34
+posts file UPDATED 12/01/2022 | 00:41:36
+posting SUCCEEDED at 12/01/2022 | 00:44:35
+posts file UPDATED 12/01/2022 | 00:44:37
+posting FAILED at 12/01/2022 | 11:24:11
+posting script STARTED at 12/01/2022 | 11:37:31
+post was found VALID at 12/01/2022 | 11:37:31
+posting SUCCEEDED at 12/01/2022 | 11:38:18
+posts file UPDATED 12/01/2022 | 11:38:20
+posting script STARTED at 12/04/2022 | 13:01:36
+post was found VALID at 12/04/2022 | 13:01:36
+posting SUCCEEDED at 12/04/2022 | 13:02:29
+posts file UPDATED 12/04/2022 | 13:02:31
+posting script STARTED at 12/05/2022 | 13:01:50
+post was found VALID at 12/05/2022 | 13:01:50
+posts file UPDATED 12/05/2022 | 13:02:34
+posting script STARTED at 12/05/2022 | 13:03:20
+post was found VALID at 12/05/2022 | 13:03:20
+posts file UPDATED 12/05/2022 | 13:04:02
+posting script STARTED at 12/05/2022 | 13:04:56
+post was found VALID at 12/05/2022 | 13:04:56
+posting SUCCEEDED at 12/05/2022 | 13:05:51
+posts file UPDATED 12/05/2022 | 13:05:53
+20:03:26 Logging test...
+20:03:26 The program is working as expected
+20:03:26 The program may not function properly
+20:03:26 The program encountered an error
+20:03:26 The program crashed
+20:03:26 test
+20:26:17 posting script STARTED at 
+20:27:01 posting script STARTED at 
+20:32:46 - posting script STARTED at 
+posting script STARTED at  20:33:11
+posting script STARTED at  21:00:56
+posting script STARTED at  21:02:00
+posting script STARTED at  21:12:45
+posting script STARTED at  21:13:13
+posting script STARTED at  21:13:34
+posting script STARTED at  21:15:47
+posting FAILED at  21:15:47
+posting script STARTED at  21:16:27
+post was found VALID at  21:16:27
+posts file UPDATED  21:16:34
+posting script STARTED at  23:31:43
+post was found VALID at  23:31:43
+posts file UPDATED  23:31:52
+posting script STARTED at  23:33:30
+post was found VALID at  23:33:30
+posts file UPDATED  23:33:40
+posting script STARTED at  23:47:17
+post was found VALID at  23:47:17
+posts file UPDATED  23:47:26
+posting script STARTED at  23:49:05
+post was found VALID at  23:49:05
+posts file UPDATED  23:49:16
+posting script STARTED at  23:50:31
+posting script STARTED at  23:50:42
+post was found VALID at  23:50:42
+posts file UPDATED  23:50:56
+posting script STARTED at  23:51:12
+posting script STARTED at  23:51:24
+post was found VALID at  23:51:24
+posting FAILED at  23:52:09
+posting script STARTED at  23:53:01
+post was found VALID at  23:53:01
+posts file UPDATED  23:53:11
+posting script STARTED at  23:53:53
+post was found VALID at  23:53:53
+posts file UPDATED  23:54:04
+posting script STARTED at  23:54:41
+post was found VALID at  23:54:41
+posts file UPDATED  23:54:51
+posting script STARTED at  23:55:10
+posting script STARTED at  23:55:18
+post was found VALID at  23:55:18
+posts file UPDATED  23:55:27
+posting script STARTED at  23:56:10
+post was found VALID at  23:56:10
+posts file UPDATED  23:56:22
+posting script STARTED at  23:56:35
+post was found VALID at  23:56:35
+posts file UPDATED  23:56:52
+posting script STARTED at  23:57:14
+post was found VALID at  23:57:14
+posting FAILED at  23:57:19
+posting script STARTED at  23:57:27
+post was found VALID at  23:57:27
+posts file UPDATED  23:57:43
+posting script STARTED at  23:58:11
+post was found VALID at  23:58:11
+posting FAILED at  23:58:12
+posting script STARTED at  00:03:22
+post was found VALID at  00:03:22
+posts file UPDATED  00:03:45
+posting script STARTED at  00:06:36
+post was found VALID at  00:06:36
+posts file UPDATED  00:06:56
+posting script STARTED at  00:09:16
+post was found VALID at  00:09:16
+posts file UPDATED  00:09:31
+posting script STARTED at  00:09:45
+post was found VALID at  00:09:45
+posts file UPDATED  00:10:02
+posting script STARTED at  00:11:51
+post was found VALID at  00:11:51
+posts file UPDATED  00:12:08
+posting script STARTED at  00:14:28
+post was found VALID at  00:14:28
+posts file UPDATED  00:14:48
+posting script STARTED at  00:15:18
+post was found VALID at  00:15:18
+posting FAILED at  00:15:19
+posting script STARTED at  00:15:26
+post was found VALID at  00:15:26
+posts file UPDATED  00:15:45
+posting script STARTED at  00:16:49
+post was found VALID at  00:16:49
+posts file UPDATED  00:17:07
+posting script STARTED at  00:17:40
+post was found VALID at  00:17:40
+posts file UPDATED  00:17:58
+posting script STARTED at  00:18:25
+post was found VALID at  00:18:25
+posts file UPDATED  00:18:43
+posting script STARTED at  00:21:02
+post was found VALID at  00:21:02
+posts file UPDATED  00:21:29
+posting script STARTED at  00:22:41
+post was found VALID at  00:22:41
+posting SUCCEEDED at  00:23:23
+posts file UPDATED  00:23:25
